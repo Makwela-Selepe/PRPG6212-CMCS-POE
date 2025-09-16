@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CMCS_PROG6212_POE.Models.Claim>
+@{
+    ViewData["Title"] = "Lecturer Dashboard";
+}
+
+<h2>Lecturer Dashboard - Buhle</h2>
+
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Month</th>
+            <th>Hours</th>
+            <th>Rate</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>January</td>
+            <td>20</td>
+            <td>200</td>
+            <td>4000</td>
+            <td class="text-warning">Pending ⏳</td>
+            <td>Lecturing IT class</td>
+        </tr>
+        <tr>
+            <td>December</td>
+            <td>15</td>
+            <td>200</td>
+            <td>3000</td>
+            <td class="text-success">Approved ✅</td>
+            <td>Extra tutorials</td>
+        </tr>
+    </tbody>
+</table>
+
+<button class="btn btn-primary">Submit New Claim</button>
